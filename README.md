@@ -4,7 +4,7 @@
 **Role:** SOC Analyst / Security Researcher  
 **Technologies:** Wireshark (PCAP Analysis), Email Header Forensics, VirusTotal API, EDR Mitigation, DNS Sinkholing  
 
-## 📌 1. Executive Summary
+## 1. Executive Summary
 This case study details a comprehensive, dual-phase Incident Response investigation into a targeted Business Email Compromise (BEC) and malware infection. An endpoint was compromised by an information-stealer variant known as **AgentTesla**. This report breaks down the full attack lifecycle: starting from the static analysis of the spear-phishing delivery mechanism (Phase 1), through the dynamic PCAP network analysis of the data exfiltration channel (Phase 2), and concluding with actionable Indicators of Compromise (IOCs) for enterprise remediation.
 
 ![Incident Dashboard](./tesla-images/phishing_page_1_img_1.png)
@@ -69,7 +69,7 @@ The malware systematically forced the remote server into **Passive Mode (PASV)**
 
 ---
 
-## 🛡️ Actionable Indicators of Compromise (IOC) & Remediation
+## Actionable Indicators of Compromise (IOC) & Remediation
 
 To orchestrate immediate block and isolation defenses, the following absolute, verified network-based indicators were compiled to be fed directly into corporate perimeter firewalls, proxy appliances, and SIEM monitoring configurations:
 
@@ -83,5 +83,5 @@ To orchestrate immediate block and isolation defenses, the following absolute, v
 
 ![IOC Summary Details](./tesla-images/network_page_10_img_1.png)
 
-## 🎯 Conclusion
+## Conclusion
 This dual-phase investigation successfully tracked the AgentTesla threat from its initial spear-phishing ingress to its final cleartext FTP exfiltration phase. By dissecting both the static email headers and the dynamic network PCAP streams, a complete attack timeline was reconstructed, allowing for the deployment of targeted EDR and firewall remediation strategies.
